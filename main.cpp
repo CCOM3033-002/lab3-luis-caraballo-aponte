@@ -8,6 +8,28 @@
  */
 
  #include <iostream>
- #include <cstdlib>
- #include < ctime> 
+ #include <cstdlib>  // uso de std::rand y std::srand
+ #include <ctime>   // uso de std::time
+
+ int main() {
+
+    srand(time(0));
+
+    int numero1, numero2, numero3;
+    int auxiliar; 
+
+    numero1 = rand() % 101;
+    numero2 = rand() % 101;
+    numero3 = rand() % 101;
+
+    std::cout << "Numeros aleatorios generados: "
+              << numero1 << "," << numero2 << "," << numero3 << std::endl;
+
+
+    
+
+
+
+
+ }
 
