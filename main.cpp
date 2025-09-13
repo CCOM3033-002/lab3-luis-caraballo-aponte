@@ -25,11 +25,12 @@
     std::cout << "Numeros aleatorios generados: "
               << numero1 << "," << numero2 << "," << numero3 << std::endl;
 
+    if (numero1 < numero2) { auxiliar = numero1; numero1 = numero2; numero2 = auxiliar; }
+    if (numero1 < numero3) { auxiliar = numero1; numero1 = numero3; numero3 = auxiliar; }
+    if (numero2 < numero3) { auxiliar = numero2; numero2 = numero3; numero3 = auxiliar; }
 
-    
-
-
-
-
+    std::cout << "Orden descendiente: "
+              << numero1 << " >=" << numero2 << ">=" << numero3 << std::endl;
+    return 0;
  }
 
